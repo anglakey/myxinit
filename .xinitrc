@@ -1,19 +1,18 @@
-  GNU nano 6.0                                                                                   .xinitrc
-xrandr --output DisplayPort-2 --mode 2560x1440 --rate 143.86
-xrandr --output HDMI-A-0 --left-of DisplayPort-2
-xrandr --output HDMI-A-0 --pos 0x360
+xrandr --output DisplayPort-0 --mode 2560x1440 --rate 143.86
+xrandr --output DisplayPort-2 --left-of DisplayPort-0
+xrandr --output DisplayPort-2 --pos -1x100
 sh ~/.fehbg &
+export EDITOR="nano" &
+export TERMINAL="st" &
+export BROWSER="brave" &
+#echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode &
+dunst &
 numlockx &
 dwmblocks &
 picom &
 blueberry-tray &
 ckb-next -b &
+/usr/lib/polkit-kde-authentication-agent-1 &
 exec dwm
-
-
-
-
-
-
 
 
