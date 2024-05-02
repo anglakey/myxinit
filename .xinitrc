@@ -4,7 +4,6 @@ xrandr --output DisplayPort-2 --pos -1x100
 sh ~/.fehbg &
 export EDITOR="nano" &
 export TERMINAL="st" &
-export BROWSER="brave" &
 #echo 0 | sudo tee /sys/module/hid_apple/parameters/fnmode &
 dunst &
 numlockx &
